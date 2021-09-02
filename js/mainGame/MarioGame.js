@@ -833,8 +833,8 @@ function MarioGame() {
   this.gameOver = function() {
     score.gameOverView();
     gameUI.makeBox(0, 0, maxWidth, height);
-    gameUI.writeText('GAME OVER', centerPos - 250, height - 300);
-    gameUI.writeText('YOU WIN MY RESUME', centerPos - 305, height / 2);
+    gameUI.writeText('GAME OVER', centerPos - 260, height - 300);
+    gameUI.writeText('YOU WIN MY RESUME', centerPos - 315, height / 2);
   };
 
   this.resetGame = function() {
