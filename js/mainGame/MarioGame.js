@@ -136,11 +136,11 @@ function MarioGame() {
         if (touches[i].pageX > 200 && touches[i].pageX <= 640) {
           keys[39] = false;
         }
-        if (touches[i].pageX > 640 && touches[i].pageX <= 1080) {
+        if (touches[i].pageX > 640 && touches[i].pageX <= 700) {
           keys[16] = false;
           keys[17] = false;
         }
-        if (touches[i].pageX > 1080 && touches[i].pageX < 1280) {
+        if (touches[i].pageX > 700 && touches[i].pageX < 1280) {
           keys[32] = false;
         }
       }
@@ -159,11 +159,11 @@ function MarioGame() {
           keys[39] = true;
           keys[37] = false;
         }
-        if (touches[i].pageX > 640 && touches[i].pageX <= 1080) {
+        if (touches[i].pageX > 640 && touches[i].pageX <= 700) {
           keys[16] = true;
           keys[32] = false;
         }
-        if (touches[i].pageX > 1080 && touches[i].pageX < 1280) {
+        if (touches[i].pageX > 700 && touches[i].pageX < 1280) {
           keys[32] = true;
           keys[16] = false;
           keys[17] = false;
