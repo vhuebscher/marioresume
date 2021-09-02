@@ -211,8 +211,8 @@ function MarioGame() {
   };
 
   this.showInstructions = function() {
-    gameUI.writeText('Controls: Arrow keys for direction, shift to run, ctrl for bullets', 30, 30);
-    gameUI.writeText('Tip: Jumping while running makes you jump higher', 30, 60);
+    gameUI.writeText('CONTROLS: ARROW KEYS, PRESS SHIFT TO RUN, PRESS CONTROL TO FIRE', 30, 30);
+    gameUI.writeText('FOR MOBILE: LEFT THUMB, MOVE RIGHT & LEFT, RIGHT THUMB, FLICK UP TO JUMP', 30, 60);
   };
 
   this.renderMap = function() {
@@ -652,7 +652,7 @@ function MarioGame() {
 
   //controlling mario with key events
   this.updateMario = function() {
-    var friction = 0.9;
+    var friction = 0.85;
     var gravity = 0.2;
 
     mario.checkMarioType();
@@ -724,9 +724,9 @@ function MarioGame() {
 
     if (keys[16]) {
       //shift key
-      mario.speed = 4.5;
+      mario.speed = 5.5;
     } else {
-      mario.speed = 3;
+      mario.speed = 4.5;
     }
 
     if (keys[17] && mario.type == 'fire') {
@@ -833,8 +833,8 @@ function MarioGame() {
   this.gameOver = function() {
     score.gameOverView();
     gameUI.makeBox(0, 0, maxWidth, height);
-    gameUI.writeText('Game Over', centerPos - 80, height - 300);
-    gameUI.writeText('Thanks For Playing', centerPos - 122, height / 2);
+    gameUI.writeText('GAME OVER', centerPos - 250, height - 300);
+    gameUI.writeText('YOU WIN MY RESUME', centerPos - 305, height / 2);
   };
 
   this.resetGame = function() {
